@@ -4,7 +4,7 @@ Tags: post grid, gutenberg blocks, recent posts, popular posts, Post Blocks, Mag
 Requires at least: 5.0    
 Tested up to: 6.2.2
 Requires PHP: 5.6
-Stable tag: 2.9.13
+Stable tag: 2.9.14
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -212,6 +212,10 @@ Use PostX and other Gutenberg blocks inside the Divi builder using the "PostX Te
 
 Use PostX and other Gutenberg blocks in the Beaver Builder by using the "PostX Template" (Beaver module). Use PostX "Saved Templates" to create desired templates/sections and display Gutenberg Blocks inside Beaver Builder with the module.
 
+### 🏆  WPBakery Page Builder Addon
+
+Use the "PostX Template" content element to display Gutenberg blocks in WPBakery Builder. Create your desired templates with PostX's "Saved Templates" feature and display PostX Gutenberg Blocks inside WPBakery Page Builder with the content element.
+
 ### 🏆 SEO Addons
 
 PostX has integration with major SEO plugins that include <a href="https://www.wpxpo.com/postx/addons/yoast/" target="_blank">Yoast</a>, <a href="https://www.wpxpo.com/postx/addons/rankmath/" target="_blank">RankMath</a>, <a href="https://www.wpxpo.com/postx/addons/seopress/" target="_blank">SEOPress</a>, <a href="https://www.wpxpo.com/postx/addons/squirrly/" target="_blank">Squirrly</a>, <a href="https://www.wpxpo.com/postx/addons/all-in-one-seo-meta/" target="_blank">All in One SEO</a>. The intent of this integration is to replace the default meta description or excerpt with the custom meta description written with the SEO addons.
@@ -354,6 +358,10 @@ It is a Gutenberg plugin it works great with WordPress version 5.x.x or more. An
 11. With the help of the Elementor and Saved Template addons, you can use any of the post blocks of PostX to any pages while editing with Elementor builder.
 
 == Changelog ==
+= 2.9.14 – 4 July 2023 =
+* New: WPBakery Page Builder Addon Added
+* Fix: Divi page builder Compatibility Issue with PostX Save Template inside Classic Editor.
+
 = 2.9.13 – 26 June 2023 =
 * New: Banner Removed From Dashboard
 

@@ -214,11 +214,10 @@ class Options{
         $current = isset($_GET['page']) ? sanitize_text_field($_GET['page']) : '';
         if ($current) {
             $pro_active = ultimate_post()->is_lc_active();
-            $date_condition = date('U') < strtotime('28-6-2023');
+            $date_condition = date('U') < strtotime('7-7-2023');
             echo '<div class="ultp-settings-tab-wrap">';
                 if ($date_condition  && !$pro_active) {
-                    // From 2.9.9
-                    echo '<div class="ultp-setting-hellobar"><span class="dashicons dashicons-bell ultp-ring"></span><strong> Summer Sale: </strong> Up to <b> 45% OFF </b> on PostX Pro - <a href="'.esc_url(ultimate_post()->get_premium_link( '', 'menu_topbar')).'" target="_blank">'.esc_html__('GET IT NOW!', 'ultimate-post').'</a></div>';
+                    echo '<div class="ultp-setting-hellobar"><span class="dashicons dashicons-bell ultp-ring"></span><strong> US Independence Day Sale : </strong> Up to <b> 45% OFF </b> on PostX Pro - <a href="'.esc_url(ultimate_post()->get_premium_link( '', 'menu_topbar')).'" target="_blank">'.esc_html__('GET IT NOW!', 'ultimate-post').'</a></div>';
                 } else {
                     if (!$pro_active) {
                         // From 2.9.9

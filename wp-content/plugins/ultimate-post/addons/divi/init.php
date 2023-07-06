@@ -22,6 +22,14 @@ function ultp_divi_builder() {
 	if ($settings == 'true') {
 		if ( class_exists( 'ET_Builder_Module' ) ) {
 			require_once ULTP_PATH.'/addons/divi/divi.php';
+			
+			$action = isset($_GET['action']) ? sanitize_text_field($_GET['action']) : '';
+			$post_id = isset($_GET['post']) ? sanitize_text_field($_GET['post']) : '';
+			if ($action && $post_id) {
+				if (get_post_type($post_id) == 'ultp_templates') {
+					add_filter( 'et_builder_enable_classic_editor', '__return_false' );
+				}
+			}
 		}
 	}
 }
